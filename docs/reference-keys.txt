@@ -1,3 +1,6 @@
 sem-in-stata
 efa
 cfa
+modeling
+exercises
+assignment-1

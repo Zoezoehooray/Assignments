@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Exercises | ModelingAssignments</title>
+  <meta name="description" content="Chapter 2 Exercises | ModelingAssignments" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Exercises | ModelingAssignments" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Exercises | ModelingAssignments" />
+  
+  
+  
+
+<meta name="author" content="Zoe Li" />
+
+
+<meta name="date" content="2022-09-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="assignment-1.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Measurement</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Modeling</a></li>
+<li class="chapter" data-level="2" data-path="exercises.html"><a href="exercises.html"><i class="fa fa-check"></i><b>2</b> Exercises</a></li>
+<li class="chapter" data-level="3" data-path="assignment-1.html"><a href="assignment-1.html"><i class="fa fa-check"></i><b>3</b> Assignment 1</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="Measurement">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ModelingAssignments</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="exercises" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Exercises<a href="exercises.html#exercises" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<ol style="list-style-type: decimal">
+<li>Given a function (relationship between two variables): <span class="math display">\[
+y=\frac{5 x^{3}}{4 x+3}
+\]</span> Find <span class="math inline">\(\frac{d y}{d x}\)</span> (the first derivative or slope of the
+function).</li>
+</ol>
+<p>Answer</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="exercises.html#cb1-1" aria-hidden="true" tabindex="-1"></a>f<span class="ot">=</span><span class="fu">expression</span>((<span class="dv">5</span><span class="sc">*</span>x<span class="sc">^</span><span class="dv">3</span>)<span class="sc">/</span>(<span class="dv">4</span><span class="sc">*</span>x<span class="sc">+</span><span class="dv">3</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="exercises.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(f, <span class="st">&#39;x&#39;</span>)</span></code></pre></div>
+<pre><code>## 5 * (3 * x^2)/(4 * x + 3) - (5 * x^3) * 4/(4 * x + 3)^2</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Find the slope of the following functions:</li>
+</ol>
+<!-- -->
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(y=(5 x-7)^{3}\)</span></li>
+<li><span class="math inline">\(y=\left(x^{2}+3 x-1\right)^{5}\)</span></li>
+</ol>
+<p>Answer</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="exercises.html#cb4-1" aria-hidden="true" tabindex="-1"></a>f<span class="ot">=</span><span class="fu">expression</span>((<span class="dv">5</span><span class="sc">*</span>x<span class="dv">-7</span>)<span class="sc">^</span><span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="exercises.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(f, <span class="st">&#39;x&#39;</span>)</span></code></pre></div>
+<pre><code>## 3 * (5 * (5 * x - 7)^2)</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="exercises.html#cb7-1" aria-hidden="true" tabindex="-1"></a>f<span class="ot">=</span><span class="fu">expression</span>((x<span class="sc">^</span><span class="dv">2</span><span class="sc">+</span><span class="dv">3</span><span class="sc">*</span>x<span class="dv">-1</span>)<span class="sc">^</span><span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="exercises.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(f, <span class="st">&#39;x&#39;</span>)</span></code></pre></div>
+<pre><code>## 5 * ((2 * x + 3) * (x^2 + 3 * x - 1)^4)</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Find the first and second derivatives of the following functions:</li>
+</ol>
+<!-- -->
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(y=e^{5 x}\)</span></li>
+<li><span class="math inline">\(y=a^{x}\)</span></li>
+<li><span class="math inline">\(y=\ln 2 x\)</span></li>
+</ol>
+<p>Answer</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="exercises.html#cb10-1" aria-hidden="true" tabindex="-1"></a>f<span class="ot">=</span><span class="fu">expression</span>(e<span class="sc">^</span>(<span class="dv">5</span><span class="sc">*</span>x))</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="exercises.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(f, <span class="st">&#39;x&#39;</span>)</span></code></pre></div>
+<pre><code>## e^(5 * x) * (log(e) * 5)</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="exercises.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(<span class="fu">D</span>(f,<span class="st">&#39;x&#39;</span>),<span class="st">&#39;x&#39;</span>)</span></code></pre></div>
+<pre><code>## e^(5 * x) * (log(e) * 5) * (log(e) * 5)</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="exercises.html#cb15-1" aria-hidden="true" tabindex="-1"></a>f<span class="ot">=</span><span class="fu">expression</span>(a<span class="sc">^</span>x)</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="exercises.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(f, <span class="st">&#39;x&#39;</span>)</span></code></pre></div>
+<pre><code>## a^x * log(a)</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="exercises.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(<span class="fu">D</span>(f,<span class="st">&#39;x&#39;</span>),<span class="st">&#39;x&#39;</span>)</span></code></pre></div>
+<pre><code>## a^x * log(a) * log(a)</code></pre>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="exercises.html#cb20-1" aria-hidden="true" tabindex="-1"></a>f<span class="ot">=</span><span class="fu">expression</span>(<span class="fu">log</span>(<span class="fu">exp</span>(<span class="dv">2</span><span class="sc">*</span>x)))</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="exercises.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(f, <span class="st">&#39;x&#39;</span>)</span></code></pre></div>
+<pre><code>## exp(2 * x) * 2/exp(2 * x)</code></pre>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="exercises.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(<span class="fu">D</span>(f,<span class="st">&#39;x&#39;</span>),<span class="st">&#39;x&#39;</span>)</span></code></pre></div>
+<pre><code>## exp(2 * x) * 2 * 2/exp(2 * x) - exp(2 * x) * 2 * (exp(2 * x) * 
+##     2)/exp(2 * x)^2</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li>Given the demand function <span class="math inline">\(Q=650-5 P-P^{2}\)</span>, where <span class="math inline">\(Q\)</span> denotes
+quantity sold and <span class="math inline">\(P\)</span> denotes the price, find the price elasticity
+of demand when <span class="math inline">\(P=10\)</span>.</li>
+</ol>
+<p>Answer A good’s price elasticity of demand ({
+E_{d}}E_{d}, PED) is a measure of how sensitive the quantity demanded
+is to its price.</p>
+<p>It may also be defined as the ratio of the percentage change in quantity
+demanded to the percentage change in price of particular commodity.</p>
+<p><span class="math display">\[
+E_{\langle p\rangle}=\frac{\Delta Q / Q}{\Delta P / P}
+\]</span></p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="exercises.html#cb25-1" aria-hidden="true" tabindex="-1"></a>Q<span class="ot">=</span><span class="fu">expression</span>(<span class="at">Q=</span><span class="dv">650-5</span><span class="sc">*</span>P<span class="sc">-</span>P<span class="sc">^</span><span class="dv">2</span>)</span></code></pre></div>
+<p>The first derivative with refer to P, or dQ/dP</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="exercises.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(Q, <span class="st">&#39;P&#39;</span>)</span></code></pre></div>
+<pre><code>## -(5 + 2 * P)</code></pre>
+<p>The price elasticity of demand is (-(5 + 2 * P))*(P/Q)</p>
+<p>Since Q=650-5*P-P^2</p>
+<p>When P is equal to 10, the price elasticity of demand is</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="exercises.html#cb28-1" aria-hidden="true" tabindex="-1"></a>(<span class="sc">-</span>(<span class="dv">5</span> <span class="sc">+</span> <span class="dv">2</span> <span class="sc">*</span> <span class="dv">10</span>))<span class="sc">*</span>((<span class="dv">650-5</span><span class="sc">*</span><span class="dv">10-10</span><span class="sc">^</span><span class="dv">2</span>)<span class="sc">/</span><span class="dv">10</span>)</span></code></pre></div>
+<pre><code>## [1] -1250</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li>Given that <span class="math inline">\(TC=31+24 Q-5.5 Q^{2}+\frac{1}{3} Q^{3}\)</span>, where <span class="math inline">\(T C\)</span>
+denotes total cost and <span class="math inline">\(Q\)</span> denotes quantity sold, find the values of
+<span class="math inline">\(Q\)</span> where the cost function reaches a minimum and a maximum. How can
+you verify if it is a minimum or a maximum? Find the total cost at
+the minimum and maximum points.</li>
+</ol>
+<p>Answer</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="exercises.html#cb30-1" aria-hidden="true" tabindex="-1"></a>TC<span class="ot">=</span><span class="fu">expression</span>(<span class="dv">31</span><span class="sc">+</span><span class="dv">24</span><span class="sc">*</span>Q<span class="fl">-5.5</span><span class="sc">*</span>Q<span class="sc">^</span>(<span class="dv">2</span>)<span class="sc">+</span>(<span class="dv">1</span><span class="sc">/</span><span class="dv">3</span>)<span class="sc">*</span>Q<span class="sc">^</span>(<span class="dv">3</span>))</span></code></pre></div>
+<p>The first derivative</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="exercises.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(TC, <span class="st">&#39;Q&#39;</span>)</span></code></pre></div>
+<pre><code>## 24 - 5.5 * (Q^((2) - 1) * (2)) + (1/3) * (Q^((3) - 1) * (3))</code></pre>
+<p>The simplized form</p>
+<p>24-11*Q+Q^2</p>
+<p>When the first derivative is equal to 0:</p>
+<p>Q=3 or 8</p>
+<p>The second derivative</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="exercises.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(<span class="fu">D</span>(TC,<span class="st">&#39;Q&#39;</span>),<span class="st">&#39;Q&#39;</span>)</span></code></pre></div>
+<pre><code>## (1/3) * (Q^(((3) - 1) - 1) * ((3) - 1) * (3)) - 5.5 * (Q^(((2) - 
+##     1) - 1) * ((2) - 1) * (2))</code></pre>
+<p>The simplified form</p>
+<p>-11+2Q</p>
+<p>When Q = 3:</p>
+<p>the second derivative (=-5) is less than 0;</p>
+<p>When Q = 8:</p>
+<p>the second derivative (=5) is greater than 0.</p>
+<p>According to the rule: The second derivative is positive (f (x) &gt; 0):
+When the second derivative is positive, the function f(x) is concave up.
+2. The second derivative is negative (f (x) &lt; 0): When the second
+derivative is negative, the function f(x) is concave down.</p>
+<p>When Q = 3, the total cost should be the maximum, which is</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="exercises.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="dv">31</span><span class="sc">+</span><span class="dv">24</span><span class="sc">*</span><span class="dv">3</span><span class="fl">-5.5</span><span class="sc">*</span><span class="dv">3</span><span class="sc">^</span>(<span class="dv">2</span>)<span class="sc">+</span>(<span class="dv">1</span><span class="sc">/</span><span class="dv">3</span>)<span class="sc">*</span><span class="dv">3</span><span class="sc">^</span>(<span class="dv">3</span>)</span></code></pre></div>
+<pre><code>## [1] 62.5</code></pre>
+<p>When Q = 8, the total cost should be the minimum, which is</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="exercises.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="dv">31</span><span class="sc">+</span><span class="dv">24</span><span class="sc">*</span><span class="dv">8</span><span class="fl">-5.5</span><span class="sc">*</span><span class="dv">8</span><span class="sc">^</span>(<span class="dv">2</span>)<span class="sc">+</span>(<span class="dv">1</span><span class="sc">/</span><span class="dv">3</span>)<span class="sc">*</span><span class="dv">8</span><span class="sc">^</span>(<span class="dv">3</span>)</span></code></pre></div>
+<pre><code>## [1] 41.66667</code></pre>
+<ol start="6" style="list-style-type: decimal">
+<li>A monopolist sells two products, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, for which the demand
+functions are: <span class="math display">\[
+\begin{aligned}
+&amp;Q_{x}=25-0.5 P_{x} \\
+&amp;Q_{y}=30-P_{y}
+\end{aligned}
+\]</span> and the combined cost function is <span class="math display">\[
+c=Q_{x}^{2}+2 Q_{x} Q_{y}+Q_{y}^{2}+20
+\]</span> Find the following:</li>
+</ol>
+<!-- -->
+<ol style="list-style-type: lower-alpha">
+<li>the profit-maximizing level of output for each product</li>
+<li>the profit-maximizing price for each product, and</li>
+<li>the maximum profit.</li>
+</ol>
+<p>Answer</p>
+<p>Since profit=sales revenue-cost =Q*P-c,</p>
+<p>in this case, profit=Px<em>Qx+Py</em>Qy-cost
+=Qx<em>(-2Qx+50)+Qy</em>(-Qy+30)-(Qx<sup>2+2<em>Qx</em>Qy+Qy</sup>2+20)</p>
+<p>The first derivative with respect to Qx = (-6)<em>Qx+40-2</em>QY, the second
+derivative with refer to Qx = -6, which is less than 0.</p>
+<p>The first derivative with respect to QY = (-4)<em>Qy+30-2</em>Qx, the second
+derivative with refer to QY = -4, which is less than 0.</p>
+<p>Thus, the profit is maxium when the two equations are equal to 0.</p>
+<p>Then set the two equations to be equal to 0,</p>
+<p>and solve the two functions, we get Qx=7, and QY=4.</p>
+<p>Therefore, Px=36, PY=26, and the maximum profit =</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="exercises.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span><span class="sc">*</span>(<span class="sc">-</span><span class="dv">2</span><span class="sc">*</span><span class="dv">7</span><span class="sc">+</span><span class="dv">50</span>)<span class="sc">+</span><span class="dv">4</span><span class="sc">*</span>(<span class="sc">-</span><span class="dv">4</span><span class="sc">+</span><span class="dv">30</span>)<span class="sc">-</span>(<span class="dv">7</span><span class="sc">^</span><span class="dv">2</span><span class="sc">+</span><span class="dv">2</span><span class="sc">*</span><span class="dv">7</span><span class="sc">*</span><span class="dv">4</span><span class="sc">+</span><span class="dv">4</span><span class="sc">^</span><span class="dv">2</span><span class="sc">+</span><span class="dv">20</span>)</span></code></pre></div>
+<pre><code>## [1] 215</code></pre>
+<ol start="7" style="list-style-type: decimal">
+<li>A manufacturer of parts for the tricycle industry sells three tires
+<span class="math inline">\((x)\)</span> for every frame <span class="math inline">\((y)\)</span>. Thus, <span class="math inline">\(\frac{x}{3}=y\)</span> or <span class="math inline">\(x=3 y\)</span>. If
+the demand is <span class="math display">\[
+\begin{aligned}
+&amp;x=63-0.25 P_{x} \\
+&amp;y=60-\frac{1}{3} P_{y}
+\end{aligned}
+\]</span> and costs are <span class="math display">\[
+c=x^{2}+x y+y^{2}+190
+\]</span> find the profit-maximizing level of (a) output, (b) price, and
+<ol start="3" style="list-style-type: lower-alpha">
+<li>profit.</li>
+</ol></li>
+</ol>
+<p>Answer profit=Px<em>x+Py</em>y-cost
+=x<em>((63-x)/0.25)+y</em>((60-y)<em>3)-(x^2+x</em>y+y^2+190)</p>
+<p>Since x=3y,
+profit=3<em>y</em>((63-3<em>y)/0.25)+y</em>((60-y)<em>3)-((3</em>y)<sup>2+(3<em>y)</em>y+y</sup>2+190)</p>
+<p>The first derivative with respect to y = -104*y+816</p>
+<p>Then set the equation to be equal to 0, we get y=7.846154, and x =
+23.53846.</p>
+<p>Since the second derivative with respect to y(=-104) is less than 0,
+this set of x and y values ensures the maximum profit.</p>
+<p>We also get Px = 157.8462, Py=156.4615, and profit = 3952.769.</p>
+<ol start="8" style="list-style-type: decimal">
+<li>Faced with two demand functions in two distinct markets <span class="math display">\[
+Q_{1}=24-0.2 P_{1} \text { and } Q_{2}=10-0.05 P_{2}
+\]</span> and a cost function where the relationship between costs and
+quantity sold in either market is <span class="math inline">\(T C=35+40 Q\)</span>, what prices will
+the firm charge (a) with price discrimination and (b) without price
+discrimination?</li>
+</ol>
+<p>Answer</p>
+<p>With price discrimination, the profit in market 1 =
+P1<em>(24-0.2</em>P1)-(35+40<em>(24-0.2</em>P1)) = -0.2P1^2+32P1-35-40*24 take the
+first derivative, and set it to 0, P1 = 80.</p>
+<p>With price discrimination, the profit in market 1 =
+P2<em>(10-0.05</em>P2)-(35+40<em>(10-0.05</em>P2)) = -0.05*P2^2+12P2-435 take the
+first derivative, and set it to 0, P2 = 120.</p>
+<p>Without price discrimination,P1 should be equal to P2, which is denoted
+as P. the total profit in market 1 and 2 = P<em>Q1 + P</em>Q2 - TC1 - TC2 =
+P<em>(24-0.2</em>P) + P<em>(10-0.05</em>P)-35-40<em>(24-0.2</em>P)-35-40<em>(10-0.05</em>P)</p>
+<p>take the first derivative, and set it to 0, P = 88.</p>
+<ol start="9" style="list-style-type: decimal">
+<li>A firm’s sales grew from <span class="math inline">\(\$ 1,000\)</span> to <span class="math inline">\(\$ 1,500\)</span> from year one to
+year six. Express sales as an exponential function of time and
+determine the nominal rate of growth.</li>
+</ol>
+<p>Answer</p>
+<p>Since the sales of year 0 is 0, I set the exponential function as Sales
+= x1(1+r)^(t-1), where r means rate of growth.</p>
+<p>According to the prompt, 1500=1000(1+r)^5, thus r = 0.719.</p>
+<ol start="10" style="list-style-type: decimal">
+<li>Find the price and quantity that will maximize total revenue, given
+the demand function <span class="math inline">\(P=12.50 e^{-0.005} Q\)</span>. Be sure to check the
+second-order condition.</li>
+</ol>
+<p>Answer</p>
+<p>Revenue = P<em>Q = P</em>((ln(P/12.5))/(-0.005)) take the first derivative,</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="exercises.html#cb41-1" aria-hidden="true" tabindex="-1"></a>S<span class="ot">=</span><span class="fu">expression</span>(P<span class="sc">*</span>((<span class="fu">log</span>(P<span class="sc">/</span><span class="fl">12.5</span>))<span class="sc">/</span>(<span class="sc">-</span><span class="fl">0.005</span>)))</span></code></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="exercises.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(S, <span class="st">&#39;P&#39;</span>)</span></code></pre></div>
+<pre><code>## ((log(P/12.5))/(-0.005)) + P * (1/12.5/(P/12.5)/(-0.005))</code></pre>
+<p>=(log(P/12.5))/(-0.005))-200</p>
+<p>take the second derivative,</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="exercises.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(<span class="fu">D</span>(S, <span class="st">&#39;P&#39;</span>),<span class="st">&#39;P&#39;</span>)</span></code></pre></div>
+<pre><code>## 1/12.5/(P/12.5)/(-0.005) + ((1/12.5/(P/12.5)/(-0.005)) - P * 
+##     (1/12.5 * (1/12.5)/(P/12.5)^2/(-0.005)))</code></pre>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="exercises.html#cb46-1" aria-hidden="true" tabindex="-1"></a>N<span class="ot">=</span><span class="fu">expression</span>((<span class="fu">log</span>(P<span class="sc">/</span><span class="fl">12.5</span>))<span class="sc">/</span>(<span class="sc">-</span><span class="fl">0.005</span>)<span class="sc">-</span><span class="dv">200</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="exercises.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(N, <span class="st">&#39;P&#39;</span>)</span></code></pre></div>
+<pre><code>## 1/12.5/(P/12.5)/(-0.005)</code></pre>
+<p>=-200/P</p>
+<p>Since the second derivative is less than 0, the revenue is the maximum
+when the first dirivative is equal to 0, and then P=4.598493, and Q=200.</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="exercises.html#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fl">12.5</span><span class="sc">*</span>(<span class="fu">exp</span>(<span class="sc">-</span><span class="dv">1</span>))</span></code></pre></div>
+<pre><code>## [1] 4.598493</code></pre>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="assignment-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/Zoezoehooray/Network-Text-Analysis-in-Python/edit/master/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/Zoezoehooray/Network-Text-Analysis-in-Python/blob/master/index.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

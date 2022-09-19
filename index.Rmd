@@ -1,8 +1,12 @@
---- 
+---
 title: "ModelingAssignments"
 author: "Zoe Li"
-date: "`r Sys.Date()`"
+date: '`r Sys.Date()`'
+output: pdf_document
 site: bookdown::bookdown_site
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 # Modeling

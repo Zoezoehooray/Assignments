@@ -23,7 +23,7 @@
 <meta name="author" content="Zoe Li" />
 
 
-<meta name="date" content="2022-09-19" />
+<meta name="date" content="2022-09-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -169,10 +169,10 @@ sales Y in units per period to advertising expenditure X ($ per period)</p>
 <p><span class="math display">\[
 Y=a+b \ln X
 \]</span> Answer</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="assignment-1.html#cb51-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">100</span>,<span class="fl">0.01</span>)</span>
-<span id="cb51-2"><a href="assignment-1.html#cb51-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span><span class="sc">*</span>(<span class="fu">log</span>(x))</span>
-<span id="cb51-3"><a href="assignment-1.html#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y, <span class="at">type=</span><span class="st">&quot;l&quot;</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="assignment-1.html#cb46-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">100</span>,<span class="fl">0.01</span>)</span>
+<span id="cb46-2"><a href="assignment-1.html#cb46-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span><span class="sc">*</span>(<span class="fu">log</span>(x))</span>
+<span id="cb46-3"><a href="assignment-1.html#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y, <span class="at">type=</span><span class="st">&quot;l&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
 <ol start="2" style="list-style-type: lower-roman">
 <li>Below function with parameters a &gt; 0, b &gt; 0. Draw its graph [5
 points]</li>
@@ -180,10 +180,10 @@ points]</li>
 <p><span class="math display">\[
 Y=a e^{b X} \text { where } \mathrm{X}&gt;0
 \]</span> Answer</p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="assignment-1.html#cb52-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">100</span>,<span class="fl">0.01</span>)</span>
-<span id="cb52-2"><a href="assignment-1.html#cb52-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="dv">5</span><span class="sc">*</span>((exp)(<span class="dv">3</span><span class="sc">*</span>x))</span>
-<span id="cb52-3"><a href="assignment-1.html#cb52-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y, <span class="at">type=</span><span class="st">&quot;l&quot;</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="assignment-1.html#cb47-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">100</span>,<span class="fl">0.01</span>)</span>
+<span id="cb47-2"><a href="assignment-1.html#cb47-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="dv">5</span><span class="sc">*</span>((exp)(<span class="dv">3</span><span class="sc">*</span>x))</span>
+<span id="cb47-3"><a href="assignment-1.html#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y, <span class="at">type=</span><span class="st">&quot;l&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
 <ol start="3" style="list-style-type: lower-roman">
 <li>Below function with parameters a &gt; 0, b &gt; 0 and c &gt;0. Draw its
 graph. [5 points]</li>
@@ -191,10 +191,10 @@ graph. [5 points]</li>
 <p><span class="math display">\[
 Y=\frac{a}{1+e^{-(b+c X)}}+d
 \]</span> Answer</p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="assignment-1.html#cb53-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">100</span>,<span class="fl">0.01</span>)</span>
-<span id="cb53-2"><a href="assignment-1.html#cb53-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="dv">5</span><span class="sc">/</span>((exp)(<span class="sc">-</span>(<span class="dv">6</span><span class="sc">+</span><span class="dv">3</span><span class="sc">*</span>x))<span class="sc">+</span><span class="dv">1</span>) <span class="sc">+</span> <span class="dv">3</span></span>
-<span id="cb53-3"><a href="assignment-1.html#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y, <span class="at">type=</span><span class="st">&quot;l&quot;</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="assignment-1.html#cb48-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">100</span>,<span class="fl">0.01</span>)</span>
+<span id="cb48-2"><a href="assignment-1.html#cb48-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="dv">5</span><span class="sc">/</span>((exp)(<span class="sc">-</span>(<span class="dv">6</span><span class="sc">+</span><span class="dv">3</span><span class="sc">*</span>x))<span class="sc">+</span><span class="dv">1</span>) <span class="sc">+</span> <span class="dv">3</span></span>
+<span id="cb48-3"><a href="assignment-1.html#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y, <span class="at">type=</span><span class="st">&quot;l&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
 <p>Question 2</p>
 <p>Consider Little’s (short-term response) ADBUDG function that links
 advertising efforts (A) to sales (S):</p>
@@ -208,10 +208,10 @@ optimum advertising level when γ = 1? [10 points]</p>
 <p>Answer</p>
 <p>S denotes sales A denotes advertising efforts S0 denotes sales at t0 S1
 denotes sales at t2</p>
-<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="assignment-1.html#cb54-1" aria-hidden="true" tabindex="-1"></a>S<span class="ot">=</span><span class="fu">expression</span>(S0 <span class="sc">+</span> (s1 <span class="sc">*</span> A<span class="sc">^</span>gamma)<span class="sc">/</span>(rho<span class="sc">+</span>A<span class="sc">^</span>gamma))</span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="assignment-1.html#cb49-1" aria-hidden="true" tabindex="-1"></a>S<span class="ot">=</span><span class="fu">expression</span>(S0 <span class="sc">+</span> (s1 <span class="sc">*</span> A<span class="sc">^</span>gamma)<span class="sc">/</span>(rho<span class="sc">+</span>A<span class="sc">^</span>gamma))</span></code></pre></div>
 <p>The first derivative</p>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="assignment-1.html#cb55-1" aria-hidden="true" tabindex="-1"></a>d1 <span class="ot">=</span> <span class="fu">D</span>(S, <span class="st">&#39;A&#39;</span>)</span>
-<span id="cb55-2"><a href="assignment-1.html#cb55-2" aria-hidden="true" tabindex="-1"></a>d1</span></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="assignment-1.html#cb50-1" aria-hidden="true" tabindex="-1"></a>d1 <span class="ot">=</span> <span class="fu">D</span>(S, <span class="st">&#39;A&#39;</span>)</span>
+<span id="cb50-2"><a href="assignment-1.html#cb50-2" aria-hidden="true" tabindex="-1"></a>d1</span></code></pre></div>
 <pre><code>## s1 * (A^(gamma - 1) * gamma)/(rho + A^gamma) - (s1 * A^gamma) * 
 ##     (A^(gamma - 1) * gamma)/(rho + A^gamma)^2</code></pre>
 <p>The simplified form</p>
@@ -219,8 +219,8 @@ denotes sales at t2</p>
 \frac{\rho s_1 \gamma A^{\gamma-1}}{\left(A^\gamma+\rho\right)^2}
 \]</span></p>
 <p>The second derivative</p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="assignment-1.html#cb57-1" aria-hidden="true" tabindex="-1"></a>d2 <span class="ot">=</span> <span class="fu">D</span>(<span class="fu">D</span>(S,<span class="st">&#39;A&#39;</span>),<span class="st">&#39;A&#39;</span>)</span>
-<span id="cb57-2"><a href="assignment-1.html#cb57-2" aria-hidden="true" tabindex="-1"></a>d2</span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="assignment-1.html#cb52-1" aria-hidden="true" tabindex="-1"></a>d2 <span class="ot">=</span> <span class="fu">D</span>(<span class="fu">D</span>(S,<span class="st">&#39;A&#39;</span>),<span class="st">&#39;A&#39;</span>)</span>
+<span id="cb52-2"><a href="assignment-1.html#cb52-2" aria-hidden="true" tabindex="-1"></a>d2</span></code></pre></div>
 <pre><code>## s1 * (A^((gamma - 1) - 1) * (gamma - 1) * gamma)/(rho + A^gamma) - 
 ##     s1 * (A^(gamma - 1) * gamma) * (A^(gamma - 1) * gamma)/(rho + 
 ##         A^gamma)^2 - ((s1 * (A^(gamma - 1) * gamma) * (A^(gamma - 
@@ -254,10 +254,10 @@ Q=\alpha+\beta A^x
 <p>$$</p>
 <p>S = m*(+A^x)</p>
 <p>$$</p>
-<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="assignment-1.html#cb59-1" aria-hidden="true" tabindex="-1"></a>S<span class="ot">=</span><span class="fu">expression</span>(m<span class="sc">*</span>(alpha<span class="sc">+</span>beta<span class="sc">*</span>A<span class="sc">^</span>x))</span></code></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="assignment-1.html#cb54-1" aria-hidden="true" tabindex="-1"></a>S<span class="ot">=</span><span class="fu">expression</span>(m<span class="sc">*</span>(alpha<span class="sc">+</span>beta<span class="sc">*</span>A<span class="sc">^</span>x))</span></code></pre></div>
 <p>The first derivative</p>
-<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="assignment-1.html#cb60-1" aria-hidden="true" tabindex="-1"></a>d1 <span class="ot">=</span> <span class="fu">D</span>(S, <span class="st">&#39;A&#39;</span>)</span>
-<span id="cb60-2"><a href="assignment-1.html#cb60-2" aria-hidden="true" tabindex="-1"></a>d1</span></code></pre></div>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="assignment-1.html#cb55-1" aria-hidden="true" tabindex="-1"></a>d1 <span class="ot">=</span> <span class="fu">D</span>(S, <span class="st">&#39;A&#39;</span>)</span>
+<span id="cb55-2"><a href="assignment-1.html#cb55-2" aria-hidden="true" tabindex="-1"></a>d1</span></code></pre></div>
 <pre><code>## m * (beta * (A^(x - 1) * x))</code></pre>
 <p>The simplified form</p>
 <p><span class="math display">\[
@@ -289,10 +289,10 @@ Q=\alpha+\kappa A-\lambda A^2
 <p>$$</p>
 <p>S = m*(+A-A^2)</p>
 <p>$$</p>
-<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="assignment-1.html#cb62-1" aria-hidden="true" tabindex="-1"></a>S<span class="ot">=</span><span class="fu">expression</span>(m<span class="sc">*</span>(alpha<span class="sc">+</span>kappa<span class="sc">*</span>A<span class="sc">-</span>lambda<span class="sc">*</span>A<span class="sc">^</span><span class="dv">2</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="assignment-1.html#cb57-1" aria-hidden="true" tabindex="-1"></a>S<span class="ot">=</span><span class="fu">expression</span>(m<span class="sc">*</span>(alpha<span class="sc">+</span>kappa<span class="sc">*</span>A<span class="sc">-</span>lambda<span class="sc">*</span>A<span class="sc">^</span><span class="dv">2</span>))</span></code></pre></div>
 <p>The first derivative</p>
-<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="assignment-1.html#cb63-1" aria-hidden="true" tabindex="-1"></a>d1 <span class="ot">=</span> <span class="fu">D</span>(S, <span class="st">&#39;A&#39;</span>)</span>
-<span id="cb63-2"><a href="assignment-1.html#cb63-2" aria-hidden="true" tabindex="-1"></a>d1</span></code></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="assignment-1.html#cb58-1" aria-hidden="true" tabindex="-1"></a>d1 <span class="ot">=</span> <span class="fu">D</span>(S, <span class="st">&#39;A&#39;</span>)</span>
+<span id="cb58-2"><a href="assignment-1.html#cb58-2" aria-hidden="true" tabindex="-1"></a>d1</span></code></pre></div>
 <pre><code>## m * (kappa - lambda * (2 * A))</code></pre>
 <p>set the first derivative equal to 0: m * (kappa - lambda * (2 * A)) =
 0 A = kappa/2lambda</p>

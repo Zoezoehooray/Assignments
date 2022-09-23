@@ -28,9 +28,10 @@ f=expression((5*x^3)/(4*x+3))
 D(f, 'x')
 ```
 
+$$
+\frac{5 x^2(8 x+9)}{(4 x+3)^2}
+$$
 2.  Find the slope of the following functions:
-
-<!-- -->
 
 (a) $y=(5 x-7)^{3}$
 (b) $y=\left(x^{2}+3 x-1\right)^{5}$
@@ -45,6 +46,10 @@ f=expression((5*x-7)^3)
 D(f, 'x')
 ```
 
+$$
+15(5 x-7)^2
+$$
+
 ```{r}
 f=expression((x^2+3*x-1)^5)
 ```
@@ -53,9 +58,11 @@ f=expression((x^2+3*x-1)^5)
 D(f, 'x')
 ```
 
-3.  Find the first and second derivatives of the following functions:
+$$
+5(2 x+3)\left(x^2+3 x-1\right)^4
+$$
 
-<!-- -->
+3.  Find the first and second derivatives of the following functions:
 
 (a) $y=e^{5 x}$
 (b) $y=a^{x}$
@@ -63,17 +70,28 @@ D(f, 'x')
 
 Answer
 
+a. the first derivative
+
 ```{r}
 f=expression(e^(5*x))
 ```
+
+a. the second derivative
 
 ```{r}
 D(f, 'x')
 ```
 
+$$ 5 e^{5 x} $$
+
 ```{r}
 D(D(f,'x'),'x')
 ```
+
+$$
+25 e^{5 x}
+$$
+b. the first derivative
 
 ```{r}
 f=expression(a^x)
@@ -83,21 +101,30 @@ f=expression(a^x)
 D(f, 'x')
 ```
 
-```{r}
-D(D(f,'x'),'x')
-```
-
-```{r}
-f=expression(log(exp(2*x)))
-```
-
-```{r}
-D(f, 'x')
-```
+$$
+a^x \ln (a)
+$$
+b. the second derivative
 
 ```{r}
 D(D(f,'x'),'x')
 ```
+
+$$
+a^x \ln ^2(a)
+$$
+
+c. the first derivative
+
+$$
+\frac{1}{x}
+$$
+
+c. the second derivative
+
+$$
+-\frac{1}{x^2}
+$$
 
 4.  Given the demand function $Q=650-5 P-P^{2}$, where $Q$ denotes
     quantity sold and $P$ denotes the price, find the price elasticity
